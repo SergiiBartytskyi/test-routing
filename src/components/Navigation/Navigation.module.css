@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.active {
+  color: orangered;
+}
