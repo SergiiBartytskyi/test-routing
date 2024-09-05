@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import css from "./PaymentCard.module.css";
 
 const PaymentCard = ({ payment: { id, cardOwner, amount, description } }) => {
+  const location = useLocation();
   return (
     <div className={css.wrapper}>
       <p>
@@ -14,7 +15,9 @@ const PaymentCard = ({ payment: { id, cardOwner, amount, description } }) => {
         <b>Description:</b> {description}
       </p>
 
-      <Link to={`/payments/${id}`}>Details</Link>
+      <Link to={`/payments/${id}`} state={location}>
+        Details
+      </Link>
     </div>
   );
 };

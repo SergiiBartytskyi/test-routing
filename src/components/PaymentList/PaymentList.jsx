@@ -3,13 +3,15 @@ import css from "./PaymentList.module.css";
 
 const PaymentList = ({ payments }) => {
   return (
-    <ul className={css.list}>
-      {payments.map((payment) => (
-        <li key={payment.id}>
-          <PaymentCard payment={payment} />
-        </li>
-      ))}
-    </ul>
+    <div>
+      <ul className={css.list}>
+        {payments.map((payment) => (
+          <li key={payment.id}>
+            <PaymentCard payment={payment} />
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

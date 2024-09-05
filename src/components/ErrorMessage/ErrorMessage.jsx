@@ -1,4 +1,4 @@
 const ErrorMessage = () => {
-  return <div>Sometging wrong!!!</div>;
+  return <div>Something wrong!!!</div>;
 };
 export default ErrorMessage;
